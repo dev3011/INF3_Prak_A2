@@ -12,9 +12,9 @@
 
 namespace TASK3{
 
-void demoTask3(){
-	//TASK3::World w(10,10,1,2,3,4);
-	TASK3::World w;
+void demoTask3() {
+	TASK3::World w(10,10,1,2,3,4);
+	//TASK3::World w;
 	int x,y;
 	TASK3::ShootResult res;
 
