@@ -25,10 +25,10 @@ TASK1.o:	TASK1.C
 TASK3.o:	TASK3.C
 	$(CC) -c $<  -std=c++11
 	
-mySW.o: mySW.C TASK3.H TASK3.C
+mySW.o: mySW.C TASK1.H TASK1.C SHA256.H SHA256.C
 	$(CC) -c $<  -std=c++11	
 	
-myApp.o: myApp.C mySW.H mySW.C TASK3.H TASK3.C
+myApp.o: myApp.C mySW.H mySW.C TASK1.H TASK1.C SHA256.H SHA256.C
 	$(CC) -c $<  -std=c++11	
 
 main.o:	main.C
@@ -49,7 +49,7 @@ client:	client.o
 	$(CC) -o client client.o SIMPLESOCKET.o -L/usr/lib/x86_64-linux-gnu -ldl -lstdc++  -std=c++11
 	
 myApp: myApp.o mySW.o $(OBJS)
-	$(CC) -o myApp myApp.o mySW.o TASK3.o -L/usr/lib/x86_64-linux-gnu -ldl -lstdc++  -std=c++11
+	$(CC) -o myApp myApp.o mySW.o TASK1.o SHA256.o -L/usr/lib/x86_64-linux-gnu -ldl -lstdc++  -std=c++11
 
 	
 	

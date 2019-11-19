@@ -6,10 +6,12 @@
  */
 
 #include "mySW.H"
-#include "TASK3.H"
+#include "TASK1.H"
+
+TASK1::
 
 void myDemo(){
 
-	TASK3::demoTask3();
+	TASK1::demoTASK1_00();
 }
 
