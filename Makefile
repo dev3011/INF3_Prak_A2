@@ -63,6 +63,6 @@ doc:
 all:	$(DEMOTARGET)
 	make clean  && make main && make server && make client
 
-run:	main	
-	./main
+run:	myApp	
+	./myApp
 		
